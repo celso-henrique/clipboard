@@ -7,7 +7,7 @@ const { useState, useEffect } = require("react");
 // ~
 const noop = () => {};
 
-const clipboard = navigator.clipboard ? navigator.clipboard : clipboardPolyfill;
+const clipboard = clipboardPolyfill;
 
 const readText = () => clipboard.readText();
 
